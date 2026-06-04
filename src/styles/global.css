@@ -1,0 +1,12 @@
+@import './variables.css';
+
+*, *::after, *::before {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+}

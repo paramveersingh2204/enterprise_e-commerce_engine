@@ -1,0 +1,26 @@
+:root {
+  /* Branding Palettes */
+  --color-primary: #5fb5e3;
+  --color-primary-dark: #458e99;
+  --color-secondary: #7b8c0b;
+  --color-accent: #b3e184;
+  --color-accent-dark: #7e886f;
+  --color-accent-light: #c1c9b6;
+  
+  /* Status Colorways */
+  --color-success: #5d9944;
+  --color-warning: #ff8c00;
+  --color-danger: #ff0000;
+  
+  /* Neutral Grounding */
+  --color-dark: #0b0b0b;
+  --color-light: #f9f3f2;
+  --color-white: #ffffff;
+  --color-gray-border: #bbbbbb;
+  --color-gray-border-light: #e8e6e6;
+  --color-text-muted: #555555;
+  --color-card-bg: #fbf4f5;
+  --color-card-border: #fccba9;
+  --color-checkout-active-border: #1b64da;
+  --color-checkout-active-bg: #eaf5ff;
+}

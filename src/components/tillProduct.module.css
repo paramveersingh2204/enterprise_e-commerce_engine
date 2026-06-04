@@ -1,0 +1,185 @@
+/* Layout Alignment Core Blocks */
+.flexcol {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;       /* 👈 Matches the exact width of info and review */
+    margin-left: auto;      /* 👈 Centers it on the page */
+    margin-right: auto;     /* 👈 Centers it on the page */
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: #ffffff; /* Explicitly keeps the product area crisp white */
+}
+
+/* Typography Layout Rules */
+.mwh {
+    max-width: 100%;        /* Allows the title to fill the space naturally */
+    font-size: 24px;
+    font-weight: 700;
+    color: #1e293b;         /* Deep slate gray text for high readability on white */
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+}
+
+.timesnew { 
+    font-family: inherit; 
+    font-size: 13px;
+    color: #64748b;         /* Muted gray text */
+}
+
+.bold { font-weight: 700; }
+.tdn { text-decoration: none; }
+.tdl { 
+    text-decoration: line-through; 
+    color: #94a3b8; 
+    margin-left: 8px;
+}
+
+/* Media Display Frameworks */
+.imageSectionWrapper {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.mainImageContainer {
+    width: 100%;
+    height: 340px;
+    background-color: #f8fafc; /* Light, soft gray background layer for product shots */
+    border: 1px solid #e2e8f0; /* Crisp light gray border line */
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hwbox {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 10px;
+}
+
+/* Image Horizontal Carousel Track */
+.imgSec {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    overflow-x: auto;
+    margin-top: 12px;
+    padding-bottom: 8px;
+}
+
+.imgSec::-webkit-scrollbar {
+    height: 4px;
+}
+.imgSec::-webkit-scrollbar-thumb {
+    background-color: #cbd5e1;
+    border-radius: 10px;
+}
+
+/* Carousel Thumbnail Squares */
+.thumbImg {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.thumbImg:hover {
+    border-color: #94a3b8;
+}
+
+.activeThumb {
+    border: 2px solid #38bdf8 !important; /* Kept your focused accent sky blue ring */
+}
+
+/* Informative Highlight Pills */
+.bgcrLabel {
+    background-color: #ef4444; 
+    color: #ffffff;
+    padding: 4px 8px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    align-self: flex-start;
+    border-radius: 4px;
+}
+
+.saveLabel {
+    background-color: rgba(239, 68, 68, 0.1); 
+    color: #ef4444;
+    padding: 3px 8px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+
+/* Label Variations colors */
+.clrw { color: #ffffff; }
+.clrlb { color: #0f172a; font-size: 24px; font-weight: 700; } /* Clear dark price text */
+.clrg { color: #10b981; font-weight: 500; font-size: 14px; }  
+.bgcaw { background-color: #faebd7; cursor: pointer; }
+.bgcdo { background-color: #38bdf8; }
+
+/* Interactive Quantity Modifier Blocks */
+.qtyBox {
+    display: flex;
+    align-items: center;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    width: fit-content;
+    padding: 6px 14px;
+    color: #0f172a;
+}
+
+.qtyBox button {
+    background: none;
+    border: none;
+    color: #38bdf8;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0 10px;
+    transition: color 0.2s ease;
+}
+
+.qtyBox button:hover {
+    color: #0f172a;
+}
+
+/* Master Primary Checkout Control triggers */
+.cbbtn {
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 100%;        /* Button stretches nicely across the content column */
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Inline Dimension Helpers */
+.px12 { font-size: 12px; }
+.px16 { font-size: 16px; }
+.px18 { font-size: 15px; color: #64748b; }
+.px20 { font-size: 20px; }
+.px22 { font-size: 22px; }
+.mgt10 { margin-top: 10px; }
+.mgt40 { margin-top: 40px; }
+.mgb10 { margin-bottom: 10px; }
+.mgb20 { margin-bottom: 20px; }
+.mgb30 { margin-bottom: 30px; }
+.mgl10 { margin-left: 10px; }
+.mgr10 { margin-right: 10px; }
+.pdl10 { padding-left: 0px; }
+.pdtb12 { padding-top: 14px; padding-bottom: 14px; }

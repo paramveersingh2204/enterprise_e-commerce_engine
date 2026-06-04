@@ -1,0 +1,38 @@
+.announcementBar {
+    width: 100%;
+    /* Modern multi-stop gradient shifting from deep charcoal to a rich twilight navy */
+    background: linear-gradient(90deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.05em; /* Cleaner text tracking for a more premium look */
+    padding: 8px 0; /* Slightly increased vertical padding for visual breathing room */
+    overflow: hidden;
+    border-bottom: 1px solid #334155; /* Subtle border separating it cleanly from the navbar */
+}
+
+.announcementMessage {
+    display: inline-block;
+    animation: fadeInOut 3.5s ease-in-out infinite; /* Smoothly slowed down to 3.5s for easier reading */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeInOut {
+    0% { 
+        opacity: 0; 
+        transform: translateY(6px); /* Reduced harshness of the vertical shift */
+    }
+    8% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+    92% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+    100% { 
+        opacity: 0; 
+        transform: translateY(-6px); 
+    }
+}

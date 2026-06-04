@@ -1,0 +1,84 @@
+/* Outer Framework Wrapper */
+.mw {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mw h2 {
+    color: #1e293b;
+    font-size: 22px;
+}
+
+.mw hr {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* Flex Positioning Systems */
+.flexrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+/* User Identity Display Pictures */
+.w30 { width: 34px; height: 34px; }
+.circle { 
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 1px solid #e2e8f0;
+}
+
+/* Text Formatting Blocks */
+.mw p {
+    color: #334155;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Fallback Profile Badges when no DP image file exists */
+.fallbackDp {
+    background-color: #e2e8f0;
+    color: #334155;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: 50%;
+}
+
+/* Bright Star Count Badges (e.g. 5 ★) */
+.bgcg {
+    background-color: #10b981; 
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 6px !important;
+}
+
+/* Customer Uploaded Verification Images */
+.revImg {
+    max-width: 200px;
+    margin-top: 12px;
+    margin-left: 20px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Typography & Layout Spacers */
+.px18 { font-size: 16px; color: #1e293b; }
+.bold { font-weight: 600; }
+.pdl5 { padding-left: 5px; }
+.pdr5 { padding-right: 5px; }
+.mgt10 { margin-top: 10px; }
+.mgt20 { margin-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #f1f5f9; }
+.mgt50 { margin-top: 50px; }
+.mgb10 { margin-bottom: 10px; }
+.mgl10 { margin-left: 10px; }
+.mgl20 { margin-left: 20px; }
+.mgr10 { margin-right: 10px; }

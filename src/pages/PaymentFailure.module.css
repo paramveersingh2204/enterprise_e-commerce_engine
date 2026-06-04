@@ -1,0 +1,49 @@
+.flexcol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.mw { max-width: 550px; margin-left: auto; margin-right: auto; }
+.w95 { width: 95%; }
+.mgt10 { margin-top: 10px; margin-bottom: 10px; }
+
+.failIcon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-danger);
+    color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.retryBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--color-primary-dark);
+    color: var(--color-white);
+    text-decoration: none;
+    height: 48px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.backHomeLink {
+    margin-top: 15px;
+    color: var(--color-text-muted);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.backHomeLink:hover { text-decoration: underline; }
